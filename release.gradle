@@ -32,17 +32,13 @@ bintray {
     publications = ['mavenJava']
     publish = true
     pkg {
-        repo = 'reportportal'
+        repo = 'agent-java-jbehave'
         name = "$project.name"
         desc = "$project.description"
-        websiteUrl = 'https://reportportal.github.io/'
-        issueTrackerUrl = "https://github.com/reportportal/$project.name/issues"
-        vcsUrl = "https://github.com/reportportal/$project.name"
-        githubRepo = "reportportal/$project.name"
-        githubReleaseNotesFile = 'CHANGELOG.md'
+        vcsUrl = "https://github.com/uarlouski/$project.name"
 
-        userOrg = 'epam'
-        licenses = ['GPL-3.0']
+        userOrg = 'uarlouski'
+        licenses = ['Apache-2.0']
     }
 }
 afterReleaseBuild.dependsOn bintrayUpload
